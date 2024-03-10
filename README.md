@@ -25,7 +25,7 @@ Passo a Passo para Utilizar o Repositório
 
 Faça as alterações desejadas e confirme-as.
 
-        `git add . git commit -m "_MENSAGEM_DO_COMMIT_"`
+        `git add . && git commit -m "_MENSAGEM_DO_COMMIT_"`
         
     
 
