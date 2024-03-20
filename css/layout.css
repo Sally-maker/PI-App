@@ -6,12 +6,15 @@
 }
 
 /* Header */
-header {
+.container {
    /* background-color: black;*/
     height: 100px;
     width: 100%;
     margin-top: 0%;
-    position: absolute;
+}
+
+main {
+    margin-top: 10%;
 }
 
 .campo-pesquisa {
