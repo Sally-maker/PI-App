@@ -1,0 +1,20 @@
+.campo-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    width: 400px;
+    border: 2px solid #51099a;
+    border-radius: 10px 10px;
+    width: 50%;
+    margin-top: 10px;
+    
+}
+
+.cabecalho {
+    /*background-color: rgb(40, 36, 36);*/
+    height: 100px;
+    width: 100%;
+    margin-top: 0%;
+    position: absolute;
+}
