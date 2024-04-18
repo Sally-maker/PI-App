@@ -8,7 +8,6 @@ Passo a Passo para Utilizar o Repositório
 
         `git clone _URL_DO_SEU_REPOSITORIO_`
         
-    
 
 2\. Criar e Mudar para uma Nova Branch baseada na develop:
 ---------------------------------------
@@ -25,7 +24,7 @@ Passo a Passo para Utilizar o Repositório
 
 Faça as alterações desejadas e confirme-as.
 
-        `git add . git commit -m "_MENSAGEM_DO_COMMIT_"`
+        `git add . && git commit -m "_MENSAGEM_DO_COMMIT_"`
         
     
 
@@ -33,3 +32,9 @@ Faça as alterações desejadas e confirme-as.
 -------------------------
 
         `git push origin _NOME_DA_NOVA_BRANCH_`
+
+6\. Trazer as informações do github para o seu respositório local (obs: estar na branch na qual você deseja atualizar):
+-------------------------
+
+        `git pull _NOME_DA_NOVA_BRANCH_`
+
