@@ -4,8 +4,8 @@ import com.carro.aula_pi.dto.UsuarioDTO;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Entity(name = "usuario")
-@Table(name = "usuario")
+@Entity(name = "usuarios")
+@Table(name = "usuarios")
 @EqualsAndHashCode(of = "id")
 @Getter
 @Setter

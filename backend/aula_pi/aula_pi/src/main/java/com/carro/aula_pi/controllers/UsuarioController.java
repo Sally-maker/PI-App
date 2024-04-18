@@ -21,7 +21,7 @@ public class UsuarioController {
     public List<Usuario> getProducts() {
         return usuarioRepository.findAll();
     }
-
+    @CrossOrigin
     @PostMapping("/register")
     public ResponseEntity register(@RequestBody UsuarioDTO usuarioDTO) {
 
@@ -50,20 +50,18 @@ public class UsuarioController {
         usuarioRepository.delete(usuarioRepository.getReferenceById(id));
         return ResponseEntity.ok("deletado");
     }
-
-    @GetMapping("/login")
-    public ResponseEntity logar (@RequestBody UsuarioDTO usuarioDTO) {
-
+    @CrossOrigin
+    @PostMapping("/login")
+    public ResponseEntity logar(@RequestBody UsuarioDTO usuarioDTO) {
         Optional<Usuario> usuario = usuarioRepository.getReferenceByEmailAndSenha(usuarioDTO.email(), usuarioDTO.senha());
-
+    
         if (usuario.isPresent()) {
-            return ResponseEntity.ok(usuario.get().toString());
+            // Convertendo o objeto Usuario para UsuarioDTO
+            UsuarioDTO usuarioLogado = new UsuarioDTO(usuario.get());
+            return ResponseEntity.ok(usuarioLogado);
         }
-
+    
         return ResponseEntity.notFound().build();
-
     }
-
-
-
+    
 }
