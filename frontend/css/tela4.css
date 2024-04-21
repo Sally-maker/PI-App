@@ -1,0 +1,55 @@
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.listas {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    margin-top: 50px;
+}
+
+.videoPrincipal {
+    width: 68vw;
+    height: 74vh;
+    margin-top: 16px;
+}
+
+.container-videos-secundarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    max-width: 350px;
+    margin-left: 60px;
+}
+
+.estatisticas {
+    display: flex;
+    gap: 5px;
+}
+
+.barraDePesquisa {
+    width: 23rem;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.botaobusca {
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 340px;
+<<<<<<< HEAD:css/tela4.css
+=======
+}
+
+.tamanhoDoIcones {
+    width: 30px;
+    height: 30px;
+>>>>>>> 830aa47dcda70be965bc97305924bfc9f9c54ce9:frontend/css/tela4.css
+}

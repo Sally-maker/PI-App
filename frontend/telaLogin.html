@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <form action="http://localhost:8080/carro/login" method="get" enctype="application/x-www-form-urlencoded" class="inputsFormulario" id="loginForm">
+        <div class="campo1">
+            <h2>Email:</h2>
+            <input type="text" value="" name="email" placeholder="Digite seu email">
+        </div>
+        <div class="campo1">
+            <h2>Senha:</h2>
+            <input type="password" value="" name="senha" placeholder="Digite sua senha">
+        </div>
+        <button class="buttonSub" type="button" id="loginButton">Login</button>
+    </form>
+
+    <script src="./js/fetchLogin.js"></script>
+</body>
+</html>
