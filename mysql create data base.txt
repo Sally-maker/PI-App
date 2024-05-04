@@ -1,0 +1,60 @@
+
+create database youtubepi;
+
+use youtubepi;
+
+create table usuario (
+	id bigint primary key AUTO_INCREMENT,
+	nome varchar(32) unique,
+	data_de_nascimento date,
+    data_de_registro date,
+	email varchar(100) unique,
+    ativo bool,
+    senha varchar(48)
+
+);
+
+create table video (
+	id bigint primary key AUTO_INCREMENT,
+	id_usuario bigint,
+    data_de_postagem date,
+	restrito bool,
+    url varchar(300),
+    duracao varchar(10),
+    categoria varchar(30),
+	titulo varchar(100),
+    ativo bool,
+    visualizacoes int,
+    foreign key (id_usuario) references usuario(id)
+
+);
+
+
+
+
+
+create table comentario (
+	
+    id bigint primary key AUTO_INCREMENT,
+	id_usuario bigint,
+    id_video bigint,
+	texto_comentario varchar(400),
+    foreign key (id_usuario) references usuario(id),
+    foreign key (id_video) references video(id)
+
+);
+
+create table gostei (
+	id bigint primary key AUTO_INCREMENT,
+	id_usuario bigint,
+    id_video bigint,
+	joinha bool,
+    foreign key (id_usuario) references usuario(id),
+    foreign key (id_video) references video(id)
+);
+
+
+
+
+
+
