@@ -1,29 +1,19 @@
 .home {
-    position: relative;
-    left: 9%;
-    top: .8rem;
-    scale: 1.4;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
 }
 
 .relogio {
-    position: relative;
-    left: 9%;
-    top: .9rem;
-    scale: 1.6;
+  width: 30px;
+  height: 30px;
 }
-
-.perfil {
-    position: relative;
-    left: 94%;
-    scale: 1.4;
-    top: -4.6rem;
-}
-
 
 .search-container{
   width: 490px;
   display: block;
   margin: 0 auto;
+  margin-left: 280px;
 }
 
 input#search-bar{
@@ -32,7 +22,6 @@ input#search-bar{
   height: 35px;
   padding: 0 20px;
   font-size: 1rem;
-  margin-top: -8px;
   border: 1px solid #D0CFCE;
   outline: none;
   &:focus{
@@ -57,23 +46,11 @@ input#search-bar{
 .search-icon{
   position: relative;
   float: right;
-  width: 75px;
-  height: 75px;
-  top: -58px;
+  width: 65px;
+  height: 65px;
+  top: -52px;
   right: -45px;
 }
-
-
-
-.quadrado {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 600px; /* Defina o tamanho máximo da barra de pesquisa */
-    margin: 0 auto
-}
-
-
 
 
 .H {
@@ -85,5 +62,17 @@ input#search-bar{
 }
 
 .cabecalho {
-    margin-top: -4px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.perfil {
+  width: 30px;
+  height: 30px;
+}
+
+
+.firstIcones img{
+  margin-right: 30px;
 }

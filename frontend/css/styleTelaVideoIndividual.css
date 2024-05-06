@@ -29,9 +29,14 @@
     margin-left: 60px;
 }
 
+.container-videos-secundarios p {
+    color: white;
+}
+
 .estatisticas {
     display: flex;
     gap: 5px;
+    color: white;
 }
 
 .barraDePesquisa {
@@ -44,4 +49,12 @@
     padding: 5px;
     border-radius: 10px;
     margin-right: 340px;
+}
+
+.tituloVideo {
+    color: white;
+}
+
+p {
+    color: white;
 }

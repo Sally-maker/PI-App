@@ -69,7 +69,7 @@
  .video {
   position: relative;
   display: inline-block; /* Exibe os vídeos em linha */
-  width: 25%; /* Largura de cada vídeo */
+  width: 24%; /* Largura de cada vídeo */
   margin-right: -2%; /* Espaço entre os vídeos */
   vertical-align: top; /* Alinha os vídeos no topo */
 }
@@ -83,11 +83,11 @@
   position: absolute;
   white-space: nowrap; /* Evita que os vídeos quebrem para a próxima linha */
   margin-top: 28%; /* posição vertical dos vídeos */
-  margin-left: 9.8%; /* posição horizontal dos vídeos */
+  margin-left: 7%; /* posição horizontal dos vídeos */
 }
 
 body {
-  background-color: #000000;
+  background-color: #212121;
 }
 
 @media (max-width: '500px'){
