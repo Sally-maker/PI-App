@@ -10,3 +10,11 @@ let slideIndex = 0;
     document.querySelector('.carrossel ul').style.transform = `translateX(${offset})`;
 
   }
+
+  function searchFunction() {
+    var input, filter;
+    input = document.getElementById('searchBar');
+    filter = input.value.toUpperCase();
+    // Insira a lógica de pesquisa aqui
+    console.log("Pesquisa realizada com: " + filter);
+}

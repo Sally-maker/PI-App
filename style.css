@@ -3,463 +3,637 @@
 /* Começo Painel Principal*/
 
 .body{
- height: vh; 
-}
-
-.fundo{
-
-  background-position: center;
-  background-color: #000000;
-  height: 99.4%;
-  width: 99.78%;
-  border: 2px solid #8800ff;
-  position: absolute;
-  top:0%;
-  left:0%;
-  margin: auto;
-
-
-
- /* height: 800%;*/
-  /*width: 800%;*/
-
-}
-
-/*
-.menuExpress{
-
-  background-color: #212121;
-  height: 80%;
-  width: 4%; 
-  border: 2px solid #8800ff;
-  position: absolute;
-  top: 20%;
-  right: 2%;
-  border-radius: 40px;
-
-  height: 78.8%;
-
- background-color: #000000;
-  border: 2px solid #000000;
-
-  }
-  */
-
-.pesquisa{
-
-  background-color: #ffffff;
-  height: 3%;
-  width: 40%; 
-  border: 2px solid #8800ff;
-  position: absolute;
-  top: 1%;
-  left: 30%;
-  border-radius: 22px;
-
-}
-
-
-.home{
-  height: 2.6%;
-  width: 2%; 
-  position: absolute;
-  top: 1%;
-  left: 5%;  
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%238800ff' d='M257 0L1 256l42.7 42.7L257 85.3l213.3 213.3L513 256zM107.7 298.7V512h298.7V298.7L257 149.3z'/%3E%3C/svg%3E");
-}
-
-
-
-.clock {
-  height: 3%;
-  width: 2%; 
-  position: absolute;
-  top: 1%;
-  left: 8%;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%238800ff' d='M13 2.03v2.02c4.39.54 7.5 4.53 6.96 8.92c-.46 3.64-3.32 6.53-6.96 6.96v2c5.5-.55 9.5-5.43 8.95-10.93c-.45-4.75-4.22-8.5-8.95-8.97m-2 .03c-1.95.19-3.81.94-5.33 2.2L7.1 5.74c1.12-.9 2.47-1.48 3.9-1.68zM4.26 5.67A9.885 9.885 0 0 0 2.05 11h2c.19-1.42.75-2.77 1.64-3.9zM2.06 13c.2 1.96.97 3.81 2.21 5.33l1.42-1.43A8.002 8.002 0 0 1 4.06 13zm5.04 5.37l-1.43 1.37A9.994 9.994 0 0 0 11 22v-2a8.002 8.002 0 0 1-3.9-1.63M12.5 7v5.25l4.5 2.67l-.75 1.23L11 13V7z'/%3E%3C/svg%3E");
-}
-
-.profile {
-  height: 2.6%;
-  width: 2%;  
-  position: absolute;
-  top: 1%;
-  right: 1%;
-
-
-
-  /*
-  height: 4%;
-  width: 5%; 
-  position: absolute;
-  top: 1%;
-  right: 1%;*/
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath fill='none' stroke='%238800ff' stroke-linecap='round' stroke-linejoin='round' d='M13.5 10.5v2a1 1 0 0 1-1 1h-2m0-13h2a1 1 0 0 1 1 1v2m-13 0v-2a1 1 0 0 1 1-1h2m0 13h-2a1 1 0 0 1-1-1v-2m6.5-4a2 2 0 1 0 0-4a2 2 0 0 0 0 4m3.803 4.5a3.994 3.994 0 0 0-7.606 0z'/%3E%3C/svg%3E");
-}
-
-.videosearch {
-  background-color: #000000;
-  border: 1px solid;
-  border-radius: 100px;
-  height: 3.4%;
-  width: 1.8%; 
-  position: absolute;
-  top: 1%;
-  right: 29.7%;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%238800ff' d='m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5q0-1.875-1.312-3.187T9.5 5Q7.625 5 6.313 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14M8 12V7l4 2.5z'/%3E%3C/svg%3E");
-}
-
-.contacts{
-  height: 3%;
-  width: 2%; 
-  position: absolute;
-  top: 1%;
-  left: 11%;  
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%238800ff' d='M5.76 20.462q-.35 0-.613-.277q-.264-.277-.264-.62v-2.223q0-1.906 1.184-3.367q1.185-1.461 3.046-1.863q-.853.6-1.322 1.51q-.47.91-.47 1.942v3.997q0 .232.075.463t.212.438zm3.108 0q-.359 0-.623-.267t-.264-.63v-4q0-1.5 1.035-2.532Q10.052 12 11.552 12h4.01q1.484 0 2.517 1.033q1.033 1.032 1.033 2.532v1.331q0 1.5-1.033 2.533t-2.533 1.033zM12 10.208q-1.393 0-2.364-.971q-.97-.971-.97-2.364t.97-2.364q.971-.97 2.364-.97t2.364.97q.97.971.97 2.364t-.97 2.364q-.971.97-2.364.97'/%3E%3C/svg%3E");
-}
-
-
-
-/* Fim Painel Principal*/
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/* Começo dos titulos*/
-
-.tituloDescrição{
-
-  color: #8800ff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
-  position: absolute;
-  top: 80%;
-  left: 16%;
-
-}
-
-
-.tituloDescrição2{
-
-  color: #8800ff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
-  position: absolute;
-  top: 88%;
-  left: 16%;
-
-}
-
-.titulo2{
-
-  color: #ffffff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
-  position: absolute;
-  top: 40%;
-  left: 32%;
-
-}
-
-.tituloMerdaH3{
-
-  color: #000000;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 10px;
-  position: absolute;
-  top: 1.8%;
-  left: 39.9%;
-
-}
-
-.titulo4{
-
-  color: #000000;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 14px;
-  position: absolute;
-  top: -10%;
-  left: 11%;
-
-}
-
-.titulo5{
-
-  color: #ffffff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
-  position: absolute;
-  top: 40%;
-  left: 20%;
-
-}
-
-.titulo6{
-
-  color: #ffffff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
-  position: absolute;
-  top: -14%;
-  left: 43%;
-
-}
-
-/* Fim dos titulos*/
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/* Começo dos Catalogos*/
-
-/*Catalogo da Esquerda   */ 
-
-.catalogoEsquerda1{
-
-  background-color: #212121;
-  height: 16%;
-  width: 12%; 
-  border: 2px solid #8800ff;
-  position: absolute;
-  top: 6%;
-  left: 2%;
-border-radius: 40px;
-
-  }
-
-.catalogoEsquerda2{
-
-  background-color: #212121;
-  height: 16%;
-  width: 12%; 
-  border: 2px solid #8800ff;
-  position: absolute;
-  top: 26%;
-  left: 2%;
-border-radius: 40px;
-
-}
-
-.catalogoEsquerda3{
-
-  background-color: #212121;
-  height: 16%;
-  width: 12%; 
-  border: 2px solid #8800ff;
-  position: absolute;
-  top: 46%;
-  left: 2%;
-border-radius: 40px;
-
-  }
-
-.catalogoEsquerda4{
-
-  background-color: #212121;
-  height: 16%;
-  width: 12%; 
-  border: 2px solid #8800ff;
-  position: absolute;
-  top: 66%;
-  left: 2%;
-border-radius: 40px;
-
-}
-
-/*Catalogo da Esquerda   */ 
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/*Catalogo da Direita   */ 
-
-.catalogoDireita1{
-
-  background-color: #212121;
-  height: 16%;
-  width: 12%;  
-  border: 2px solid #8800ff;
-  position: absolute;
-  top: 6%;
-  left: 86%;
-  border-radius: 40px;
-
-}
-
-.catalogoDireita2{
-
-  background-color: #212121;
-  height: 16%;
-  width: 12%;  
-  border: 2px solid #8800ff;
-  position: absolute;
-  top: 26%;
-  left: 86%;
-border-radius: 40px;
-
-}
-
-.catalogoDireita3{
-
-  background-color: #212121;
-  height: 16%;
-  width: 12%;  
-  border: 2px solid #8800ff;
-  position: absolute;
-  top: 46%;
-  left: 86%;
-border-radius: 40px;
-
-}
-
-.catalogoDireita4{
-
-  background-color: #212121;
-  height: 16%;
-  width: 12%;  
-  border: 2px solid #8800ff;
-  position: absolute;
-  top: 66%;
-  left: 86%;
-border-radius: 40px;
-
-}
-
-/*Catalogo da Direita   */ 
-
-/* Fim dos Catalogos*/
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/* Começo do Carrossel*/
-
-/*Base do Carrossel*/
-.carrossel{
-  background-color: #212121;
-  border: 2px solid #8800ff;
-  position: absolute;
-border-radius: 40px;
-  }
-/*Base do Carrossel*/
-
-.carrossel {
-  top: 6%;
-  /*left: 16%;
-  height: 74%;
-    width: 68%;*/
-    overflow: hidden;
-    margin: 0 auto;
-
-   height: 64%;
-  width: 58%;
-  left: 22%;
-}
-.carrossel ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    transition: transform 1.0s ease;
-}
-.carrossel li {
-    flex: 0 0 100%;
-}
-.carrossel img {
-    width: 100%;
-    height: auto;
-}
-.prev4{
-  padding: 32px;
-  top: 40%;
-  color: #8800ff;
-  position: absolute;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%238800ff' fill-rule='evenodd' d='M2.5 9.402c-2 1.155-2 4.041 0 5.196l9 5.196c1.515.875 3.317.259 4.102-1.096l1.898 1.096c2 1.155 4.5-.288 4.5-2.598V6.804c0-2.31-2.5-3.753-4.5-2.598l-1.898 1.096c-.785-1.355-2.587-1.971-4.102-1.096zM16 7.382v9.237l2.5 1.443a1 1 0 0 0 1.5-.866V6.804a1 1 0 0 0-1.5-.866z' clip-rule='evenodd'/%3E%3C/svg%3E");
-
-
-
-}
-.next4 {
-  padding: 32px;
-  top: 40%;
-  color: #8800ff;
-  position: absolute;
-  display: inline-block;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%238800ff' fill-rule='evenodd' d='M5.5 5.938a1 1 0 0 0-1.5.866v10.392a1 1 0 0 0 1.5.866L8 16.62V7.38zm2.898-.636L6.5 4.206l-.5.866l.5-.866C4.5 3.05 2 4.494 2 6.804v10.392c0 2.31 2.5 3.753 4.5 2.598l1.898-1.096c.785 1.355 2.587 1.971 4.102 1.096l9-5.196c2-1.155 2-4.041 0-5.196l-9-5.196c-1.515-.875-3.317-.259-4.102 1.096' clip-rule='evenodd'/%3E%3C/svg%3E");
-
-
-
-
-
-
-  /*
-  background-color: #8800ff;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-   /* background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    z-index: 2;
-  border-radius: 10px;*/
-}
-.prev4 {
-    left: 0;
-}
-.next4 {
-    right: 0;
-}
-
-/* Fim do Carrossel*/
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-/* Barra vertical    */
-
-::-webkit-scrollbar{
+  height: vh; 
+ }
+ 
+ .fundo{
+ 
+   background-position: center;
    background-color: #000000;
-  width: 1% ;
-
-}
-
-::-webkit-scrollbar-thumb{
+   height: 99.6%;
+   width: 99.78%;
+   border: 2px solid #8800ff;
+   position: absolute;
+   top:0%;
+   left:0%;
+   margin: auto;
+ 
+ 
+ 
+  /* height: 800%;*/
+   /*width: 800%;*/
+ 
+ }
+ 
+ /*
+ .menuExpress{
+ 
+   background-color: #212121;
+   height: 80%;
+   width: 4%; 
+   border: 2px solid #8800ff;
+   position: absolute;
+   top: 20%;
+   right: 2%;
+   border-radius: 40px;
+ 
+   height: 78.8%;
+ 
+  background-color: #000000;
+   border: 2px solid #000000;
+ 
+   }
+   */
+ /*
+ .pesquisa{
+ 
+   background-color: #ffffff;
+   height: 3%;
+   width: 40%; 
+   border: 2px solid #8800ff;
+   position: absolute;
+   top: 1%;
+   left: 30%;
+   border-radius: 22px;
+ 
+ }*/
+ 
+ 
+ .home{
+   height: 2.6%;
+   width: 2%; 
+   position: absolute;
+   top: 1%;
+   left: 5%;  
+   display: inline-block;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%238800ff' d='M257 0L1 256l42.7 42.7L257 85.3l213.3 213.3L513 256zM107.7 298.7V512h298.7V298.7L257 149.3z'/%3E%3C/svg%3E");
+ }
+ 
+ 
+ 
+ .clock {
+   height: 3%;
+   width: 2%; 
+   position: absolute;
+   top: 1%;
+   left: 8%;
+   display: inline-block;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%238800ff' d='M13 2.03v2.02c4.39.54 7.5 4.53 6.96 8.92c-.46 3.64-3.32 6.53-6.96 6.96v2c5.5-.55 9.5-5.43 8.95-10.93c-.45-4.75-4.22-8.5-8.95-8.97m-2 .03c-1.95.19-3.81.94-5.33 2.2L7.1 5.74c1.12-.9 2.47-1.48 3.9-1.68zM4.26 5.67A9.885 9.885 0 0 0 2.05 11h2c.19-1.42.75-2.77 1.64-3.9zM2.06 13c.2 1.96.97 3.81 2.21 5.33l1.42-1.43A8.002 8.002 0 0 1 4.06 13zm5.04 5.37l-1.43 1.37A9.994 9.994 0 0 0 11 22v-2a8.002 8.002 0 0 1-3.9-1.63M12.5 7v5.25l4.5 2.67l-.75 1.23L11 13V7z'/%3E%3C/svg%3E");
+ }
+ 
+ .profile {
+   height: 2.6%;
+   width: 2%;  
+   position: absolute;
+   top: 1%;
+   right: 1%;
+ 
+ 
+ 
+   /*
+   height: 4%;
+   width: 5%; 
+   position: absolute;
+   top: 1%;
+   right: 1%;*/
+   display: inline-block;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14'%3E%3Cpath fill='none' stroke='%238800ff' stroke-linecap='round' stroke-linejoin='round' d='M13.5 10.5v2a1 1 0 0 1-1 1h-2m0-13h2a1 1 0 0 1 1 1v2m-13 0v-2a1 1 0 0 1 1-1h2m0 13h-2a1 1 0 0 1-1-1v-2m6.5-4a2 2 0 1 0 0-4a2 2 0 0 0 0 4m3.803 4.5a3.994 3.994 0 0 0-7.606 0z'/%3E%3C/svg%3E");
+ }
+ 
+ .videosearch {
+   background-color: #000000;
+   border: 1px solid;
+   border-radius: 100px;
+   height: 3.4%;
+   width: 1.8%; 
+   position: absolute;
+   top: 1%;
+   right: 29.7%;
+   display: inline-block;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%238800ff' d='m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5q0-1.875-1.312-3.187T9.5 5Q7.625 5 6.313 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14M8 12V7l4 2.5z'/%3E%3C/svg%3E");
+ }
+ 
+ .contacts{
+   height: 3%;
+   width: 2%; 
+   position: absolute;
+   top: 1%;
+   left: 11%;  
+   display: inline-block;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%238800ff' d='M5.76 20.462q-.35 0-.613-.277q-.264-.277-.264-.62v-2.223q0-1.906 1.184-3.367q1.185-1.461 3.046-1.863q-.853.6-1.322 1.51q-.47.91-.47 1.942v3.997q0 .232.075.463t.212.438zm3.108 0q-.359 0-.623-.267t-.264-.63v-4q0-1.5 1.035-2.532Q10.052 12 11.552 12h4.01q1.484 0 2.517 1.033q1.033 1.032 1.033 2.532v1.331q0 1.5-1.033 2.533t-2.533 1.033zM12 10.208q-1.393 0-2.364-.971q-.97-.971-.97-2.364t.97-2.364q.971-.97 2.364-.97t2.364.97q.97.971.97 2.364t-.97 2.364q-.971.97-2.364.97'/%3E%3C/svg%3E");
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ #searchBar {
+   background-color: #ffffff;
+   height: 3%;
+   width: 40%; 
+   border: 2px solid #8800ff;
+   position: absolute;
+   top: 1%;
+   left: 30%;
+   border-radius: 22px;
+ }
+ #searchButton {
+   background-color: #000000;
+   border: 1px solid;
+   border-radius: 100px;
+   height: 3.4%;
+   width: 1.8%; 
+   position: absolute;
+   top: 1%;
+   right: 29.7%;
+   display: inline-block;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%238800ff' d='m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5q0-1.875-1.312-3.187T9.5 5Q7.625 5 6.313 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14M8 12V7l4 2.5z'/%3E%3C/svg%3E");
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* Fim Painel Principal*/
+ 
+ /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+ 
+ /* Começo dos titulos*/
+ 
+ .tituloDescrição{
+ 
+   color: #8800ff;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 20px;
+   position: absolute;
+   top: 80%;
+   left: 16%;
+ 
+ }
+ 
+ 
+ .tituloDescrição2{
+ 
+   color: #8800ff;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 20px;
+   position: absolute;
+   top: 88%;
+   left: 16%;
+ 
+ }
+ 
+ .titulo2{
+ 
+   color: #ffffff;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 20px;
+   position: absolute;
+   top: 40%;
+   left: 32%;
+ 
+ }
+ 
+ .tituloMerdaH3{
+ 
+   color: #000000;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 10px;
+   position: absolute;
+   top: 1.8%;
+   left: 39.9%;
+ 
+ }
+ 
+ .titulo4{
+ 
+   color: #000000;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 14px;
+   position: absolute;
+   top: -10%;
+   left: 11%;
+ 
+ }
+ 
+ .titulo5{
+ 
+   color: #ffffff;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 20px;
+   position: absolute;
+   top: 40%;
+   left: 20%;
+ 
+ }
+ 
+ .titulo6{
+ 
+   color: #ffffff;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 20px;
+   position: absolute;
+   top: -14%;
+   left: 43%;
+ 
+ }
+ 
+ /* Fim dos titulos*/
+ 
+ /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+ 
+ /* Começo dos Catalogos*/
+ 
+ /*Catalogo da Esquerda   */ 
+ 
+ .video1Esq{
+  
+ 
+   height: 16%;
+   width: 12%;
+   border: 2px solid #8800ff;
+   position: absolute;
+   top: 6%;
+   left: 2%;
+ border-radius: 40px;
+  
+   }
+ 
+   .video2Esq{
+  
+ 
+     height: 16%;
+     width: 12%;
+     border: 2px solid #8800ff;
+     position: absolute;
+     top: 26%;
+     left: 2%;
+   border-radius: 40px;
+    
+     }
+ 
+ 
+ 
+     .video3Esq{
+  
+ 
+       height: 16%;
+       width: 12%;
+       border: 2px solid #8800ff;
+       position: absolute;
+       top: 46%;
+       left: 2%;
+     border-radius: 40px;
+      
+       }
+     
+       .video4Esq{
+      
+     
+         height: 16%;
+         width: 12%;
+         border: 2px solid #8800ff;
+         position: absolute;
+         top: 66%;
+         left: 2%;
+       border-radius: 40px;
+        
+         }
+ 
+ /*
+ .catalogoEsquerda1{
+  
+   background-color: #212121;
+   height: 16%;
+   width: 12%;
+   border: 2px solid #8800ff;
+   position: absolute;
+   top: 6%;
+   left: 2%;
+ border-radius: 40px;
+  
+   }
+ 
+ .catalogoEsquerda2{
+ 
+   background-color: #212121;
+   height: 16%;
+   width: 12%; 
+   border: 2px solid #8800ff;
+   position: absolute;
+   top: 26%;
+   left: 2%;
+ border-radius: 40px;
+ 
+ }
+ 
+ 
+ 
+ .catalogoEsquerda3{
+ 
+   background-color: #212121;
+   height: 16%;
+   width: 12%; 
+   border: 2px solid #8800ff;
+   position: absolute;
+   top: 46%;
+   left: 2%;
+ border-radius: 40px;
+ 
+   }
+ 
+ .catalogoEsquerda4{
+ 
+   background-color: #212121;
+   height: 16%;
+   width: 12%; 
+   border: 2px solid #8800ff;
+   position: absolute;
+   top: 66%;
+   left: 2%;
+ border-radius: 40px;
+ 
+ }*/
+ 
+ 
+ .catalogo4{
+ 
+   background-color: #000000;
+   height: 3.6%;
+   width: 3.8%; 
+   position: absolute;
+   top: 78.4%;
+   left: 8%;
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+ /*Catalogo da Esquerda   */ 
+ 
+ /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+ 
+ /*Catalogo da Direita   */ 
+ 
+ .video1Dir{
+  
+ 
+   height: 16%;
+   width: 12%;
+   border: 2px solid #8800ff;
+   position: absolute;
+    top: 6%;
+   left: 86%;
+ border-radius: 40px;
+  
+   }
+ 
+   .video2Dir{
+  
+ 
+     height: 16%;
+     width: 12%;
+     border: 2px solid #8800ff;
+     position: absolute;
+     top: 26%;
+     left: 86%;
+   border-radius: 40px;
+    
+     }
+ 
+ 
+ 
+     .video3Dir{
+  
+ 
+       height: 16%;
+       width: 12%;
+       border: 2px solid #8800ff;
+       position: absolute;
+       top: 46%;
+       left: 86%;
+     border-radius: 40px;
+      
+       }
+     
+       .video4Dir{
+      
+     
+         height: 16%;
+         width: 12%;
+         border: 2px solid #8800ff;
+         position: absolute;
+         top: 66%;
+         left: 86%;
+       border-radius: 40px;
+        
+         }
+ 
+ 
+ .videosPrincipal{
+   
+   
+     position: relative;
+     
+     border: 2px solid #8800ff;
+    height: 74%;
+   width: 68%;
+   top: 6%;
+   left: 15.5%;
+   border-radius: 40px;
+ 
+ }
+ 
+ 
+ /*
+ .catalogoDireita1{
+ 
+   background-color: #212121;
+   height: 16%;
+   width: 12%;  
+   border: 2px solid #8800ff;
+   position: absolute;
+   top: 6%;
+   left: 86%;
+   border-radius: 40px;
+ 
+ }
+ 
+ .catalogoDireita2{
+ 
+   background-color: #212121;
+   height: 16%;
+   width: 12%;  
+   border: 2px solid #8800ff;
+   position: absolute;
+   top: 26%;
+   left: 86%;
+ border-radius: 40px;
+ 
+ }
+ 
+ .catalogoDireita3{
+ 
+   background-color: #212121;
+   height: 16%;
+   width: 12%;  
+   border: 2px solid #8800ff;
+   position: absolute;
+   top: 46%;
+   left: 86%;
+ border-radius: 40px;
+ 
+ }
+ 
+ .catalogoDireita4{
+ 
+   background-color: #212121;
+   height: 16%;
+   width: 12%;  
+   border: 2px solid #8800ff;
+   position: absolute;
+   top: 66%;
+   left: 86%;
+ border-radius: 40px;
+ 
+ }*/
+ 
+ 
+ /*Catalogo da Direita   */ 
+ 
+ /* Fim dos Catalogos*/
+ 
+ /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+ 
+ /* Começo do Carrossel*/
+ 
+ /*Base do Carrossel*/
+ /*
+ .carrossel{
+   background-color: #212121;
+   border: 2px solid #8800ff;
+   position: absolute;
+ border-radius: 40px;
+   }
+ 
+ 
+ .carrossel {
+   top: 6%;
+   /*left: 16%;
+   height: 74%;
+     width: 68%;*//*
+     overflow: hidden;
+     margin: 0 auto;
+ 
+    height: 64%;
+   width: 58%;
+   left: 22%;
+ }
+ .carrossel ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     transition: transform 1.0s ease;
+ }
+ .carrossel li {
+     flex: 0 0 100%;
+ }
+ .carrossel img {
+     width: 100%;
+     height: auto;
+ }
+ .prev4{
+   padding: 32px;
+   top: 40%;
+   color: #8800ff;
+   position: absolute;
+   display: inline-block;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%238800ff' fill-rule='evenodd' d='M2.5 9.402c-2 1.155-2 4.041 0 5.196l9 5.196c1.515.875 3.317.259 4.102-1.096l1.898 1.096c2 1.155 4.5-.288 4.5-2.598V6.804c0-2.31-2.5-3.753-4.5-2.598l-1.898 1.096c-.785-1.355-2.587-1.971-4.102-1.096zM16 7.382v9.237l2.5 1.443a1 1 0 0 0 1.5-.866V6.804a1 1 0 0 0-1.5-.866z' clip-rule='evenodd'/%3E%3C/svg%3E");
+ 
+ 
+ 
+ }
+ .next4 {
+   padding: 32px;
+   top: 40%;
+   color: #8800ff;
+   position: absolute;
+   display: inline-block;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%238800ff' fill-rule='evenodd' d='M5.5 5.938a1 1 0 0 0-1.5.866v10.392a1 1 0 0 0 1.5.866L8 16.62V7.38zm2.898-.636L6.5 4.206l-.5.866l.5-.866C4.5 3.05 2 4.494 2 6.804v10.392c0 2.31 2.5 3.753 4.5 2.598l1.898-1.096c.785 1.355 2.587 1.971 4.102 1.096l9-5.196c2-1.155 2-4.041 0-5.196l-9-5.196c-1.515-.875-3.317-.259-4.102 1.096' clip-rule='evenodd'/%3E%3C/svg%3E");
+ 
+ 
+ 
+ 
+ 
+ 
+   /*
    background-color: #8800ff;
-   height: 18%;
+     cursor: pointer;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+    /* background: rgba(0, 0, 0, 0.5);
+     color: white;
+     padding: 10px;
+     z-index: 2;
+   border-radius: 10px;*//*
+ }
+ .prev4 {
+     left: 0;
+ }
+ .next4 {
+     right: 0;
+ }
+ 
+ /* Fim do Carrossel*/
+ /*
+ /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+ 
+ /* Barra vertical    */
+ 
+ ::-webkit-scrollbar{
+    background-color: #000000;
    width: 1% ;
-  border: 2px solid #ffffff;
-
-  border-radius: 40px;
-}
-
-/* Barra vertical    */
-
-/*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
+ 
+ }
+ 
+ ::-webkit-scrollbar-thumb{
+    background-color: #8800ff;
+    height: 18%;
+    width: 1% ;
+   border: 2px solid #ffffff;
+ 
+   border-radius: 40px;
+ }
+ 
+ /* Barra vertical    */
+ 
+ /*-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
