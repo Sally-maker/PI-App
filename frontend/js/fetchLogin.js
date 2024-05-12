@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log("Resposta do servidor:", data);
 
                 console.log("Redirecionando para a próxima página...");
-                window.location.href = '../telaDeVideoIndividual.html';
+                window.location.href = '../telaPrincipal.html';
             })
             .catch((error) => {
                 console.error("Erro:", error);
