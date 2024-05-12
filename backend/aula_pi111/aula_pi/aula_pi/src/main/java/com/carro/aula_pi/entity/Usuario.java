@@ -4,13 +4,14 @@ import com.carro.aula_pi.dto.usuario.UsuarioDTO;
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
-@Entity(name = "usuario")
-@Table(name = "usuario")
+@Entity(name = "usuarios")
+@Table(name = "usuarios")
 @EqualsAndHashCode(of = "id")
 @Getter
 @Setter
@@ -26,24 +27,21 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
+    @DateTimeFormat(pattern = "MM/dd/yyyy")
     private String dataDeNascimento;
-    private String dataDeRegistro;
+    private LocalDate dataDeRegistro;
     private String email;
     private String senha;
     private boolean ativo;
 
-    static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
     public Usuario(UsuarioDTO usuarioDTO) {
-
-
-
 
         this.nome = usuarioDTO.nome();
         this.senha = usuarioDTO.senha();
         this.email = usuarioDTO.email();
-        this.dataDeRegistro = LocalDate.now().format(formatter);
-        this.dataDeNascimento = String.format(usuarioDTO.dataNascimento(), formatter);
+        this.dataDeRegistro = LocalDate.now();
+        this.dataDeNascimento = usuarioDTO.dataNascimento();
 
     }
 

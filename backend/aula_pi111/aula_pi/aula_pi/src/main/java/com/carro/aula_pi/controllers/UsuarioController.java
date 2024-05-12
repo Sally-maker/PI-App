@@ -6,12 +6,16 @@ import com.carro.aula_pi.entity.Usuario;
 import com.carro.aula_pi.erros.UsuarioNaoEncontradoException;
 import com.carro.aula_pi.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Optional;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 
 @RestController
 @RequestMapping("/usuario")
@@ -20,7 +24,7 @@ public class UsuarioController {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
-
+    @CrossOrigin
     @PostMapping("/registrar")
     public ResponseEntity<UsuarioDTO> register(@RequestBody UsuarioDTO usuarioDTO) {
 
@@ -28,7 +32,13 @@ public class UsuarioController {
         return ResponseEntity.ok(usuarioDTO);
     }
 
-    @GetMapping("user/{id}")
+    @GetMapping("/users")
+    public ResponseEntity<List<Usuario>> getAllUsers() {
+        return ResponseEntity.status(HttpStatus.OK).body(usuarioRepository.findAll());
+    }
+    
+
+    @GetMapping("/user/{id}")
     public ResponseEntity<Usuario> getById(@PathVariable Long id) {
         var usuario = usuarioRepository.findById(id);
         if (usuario.isPresent()) {
@@ -38,7 +48,7 @@ public class UsuarioController {
         }
     }
 
-    @PutMapping("atualizar/{id}")
+    @PutMapping("/atualizar/{id}")
     public ResponseEntity atualizar(@RequestBody UsuarioDTO dadosAtualizados, @PathVariable Long id) {
         var usuario = usuarioRepository.findById(id);
         if (usuario.isPresent()) {
@@ -64,7 +74,7 @@ public class UsuarioController {
 
         throw new UsuarioNaoEncontradoException("Não foi encontrado nenhum usuário com o id " + id);
     }
-
+    @CrossOrigin
     @PostMapping("/login")
     public ResponseEntity<Long> logar (@RequestBody LoginDTO loginDTO) {
 
