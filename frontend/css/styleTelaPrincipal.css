@@ -3,27 +3,10 @@
 /* Começo Painel Principal*/
 
 .body{
- height: vh; 
+ background-color: #212121; 
 }
 
-.fundo{
 
-  background-position: center;
-  background-color: #000000;
-  height: 99.4%;
-  width: 99.78%;
-  border: 2px solid #8800ff;
-  position: absolute;
-  top:0%;
-  left:0%;
-  margin: auto;
-
-
-
- /* height: 800%;*/
-  /*width: 800%;*/
-
-}
 
 /*
 .menuExpress{

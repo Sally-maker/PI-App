@@ -1,6 +1,7 @@
-function submitRegisterForm() {
+async function submitRegisterForm() {
     const form = document.getElementById('registerForm');
     const formData = new FormData(form);
+    console.log(formData)
 
     const jsonObject = {};
     formData.forEach((value, key) => {
@@ -8,7 +9,7 @@ function submitRegisterForm() {
     });
     const jsonData = JSON.stringify(jsonObject);
 
-    fetch('http://localhost:8080/carro/register', {
+   await fetch('http://localhost:8080/usuario/registrar', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
