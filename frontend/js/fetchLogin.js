@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const loginButton = document.getElementById("loginButton");
 
-    loginButton.addEventListener("click", function () {
+    loginButton.addEventListener("click", async function () {
         const form = document.getElementById("loginForm");
         const formData = new FormData(form);
 
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         const jsonData = JSON.stringify(jsonObject);
 
-        fetch("http://localhost:8080/carro/login", {
+       await fetch("http://localhost:8080/usuario/login", {
             method: "POST",
             body: jsonData,
             headers: {

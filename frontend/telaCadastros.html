@@ -38,35 +38,29 @@
         <h1>Cadastro</h1>
     </div>
 
-    <form id="registerForm" method="post" onsubmit="return validarFormulario()">
+    <form id="registerForm" method="POST">
         <div class="container">
             <div class="inputs">
-                    <h3 class="subtitulo">Nome:</h3>
-                <input id="nomePerfil" class="componentes" placeholder="Digite o nome do perfil..." type="text"
-                    required>
+                <label for="nome" class="subtitulo">Nome:</label>
+                <input id="nome" name="nome" class="componentes" placeholder="Digite o nome do perfil..." type="text" required>
             </div>
             <div class="inputs">
-                <h3 class="subtitulo">Email:</h3>
-
-                <input id="email" class="componentes" placeholder="Digite o Email" type="email" required>
+                <label for="email" class="subtitulo">Email:</label>
+                <input id="email" name="email" placeholder="Digite o Email" type="email" required>
             </div>
             <div class="inputs">
-                <h3 class="subtitulo">Senha:</h3>
-
-                <input id="senha" class="componentes" placeholder="Digite a senha do perfil..." type="password"
-                required>
+                <label for="senha" class="subtitulo">Senha:</label>
+                <input id="senha" name="senha" class="componentes" placeholder="Digite a senha do perfil..." type="password" required>
             </div>
             <div class="inputs">
-                <h3 class="subtitulo">Cofirmar Senha:</h3>
-
-                <input id="confirmarSenha" class="componentes" placeholder="Confirme a senha" type="password" required>
-            </div>
-            <div class="inputs-btn">
-                <button class="componentes" type="submit">Cadastrar</button>
+                <label for=" data_de_nascimento" class="subtitulo">Data de Nascimento</label>
+                <input id=" data_de_nascimento" name="dataDeNascimento" class="componentes" type="date" required>
             </div>
         </div>
+        <button class="componentes" type="button" onclick="submitRegisterForm()">Cadastrar</button>
     </form>
+    
+    <script src="./js/fetchCadastro.js"></script>
 </body>
-<script src="./js/fetchCadastro.js"></script>
 
 </html>

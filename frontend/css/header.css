@@ -24,6 +24,7 @@ input#search-bar{
   font-size: 1rem;
   border: 1px solid #D0CFCE;
   outline: none;
+  border-radius: 10px;
   &:focus{
     border: 1px solid #D0CFCE;
     transition: 0.35s ease;
@@ -65,6 +66,7 @@ input#search-bar{
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    padding: 20px;
 }
 
 .perfil {
