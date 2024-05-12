@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7064380f-25dd-4a6f-b08d-ad6c89eeed4e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/src/main/java/com/carro/aula_pi/controllers/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/src/main/java/com/carro/aula_pi/controllers/UsuarioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/src/main/java/com/carro/aula_pi/entity/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/src/main/java/com/carro/aula_pi/entity/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/AulaPiApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/AulaPiApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/controllers/LikeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/controllers/LikeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/controllers/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/controllers/UsuarioController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/controllers/VideoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/controllers/VideoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/dto/usuario/LoginDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/dto/usuario/LoginDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/dto/usuario/UsuarioDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/dto/usuario/UsuarioDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/dto/video/VideoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/dto/video/VideoDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/dto/video/VideoEditDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/dto/video/VideoEditDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/dto/video/VideoRetornoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/dto/video/VideoRetornoDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/entity/Like.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/entity/Like.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/entity/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/entity/Usuario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/entity/Video.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/entity/Video.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/erros/TratadorErrosMysql$ErroValorInvalidoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/erros/TratadorErrosMysql$ErroValorInvalidoDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/erros/TratadorErrosMysql.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/erros/TratadorErrosMysql.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/erros/UsuarioNaoEncontradoException.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/erros/UsuarioNaoEncontradoException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/erros/VideoNaoEncontradoException.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/erros/VideoNaoEncontradoException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/repository/LikeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/repository/LikeRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/repository/UsuarioRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/repository/UsuarioRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/repository/VideoRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/classes/com/carro/aula_pi/repository/VideoRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/test-classes/com/carro/aula_pi/AulaPiApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/aula_pi111/aula_pi/aula_pi/target/test-classes/com/carro/aula_pi/AulaPiApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/css/TelaCadastro.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/css/TelaCadastro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/js/fetchCadastro.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/js/fetchCadastro.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/js/fetchLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/js/fetchLogin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/telaCadastros.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/telaCadastros.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/telaLogin.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/telaLogin.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2gMuCzgmFTGt7CR4z0xtTzQLRi3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AulaPiApplication.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "gabriel",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Gustavo/Documents/PI-App/backend"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-18.0.2-corretto-18.0.2-4caba194b151-5720f15e" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7064380f-25dd-4a6f-b08d-ad6c89eeed4e" name="Changes" comment="" />
+      <created>1715519644483</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715519644483</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
