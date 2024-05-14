@@ -1,3 +1,4 @@
+
 .imagem {
   position:absolute;
   max-width: 50%;
@@ -88,6 +89,8 @@
 
 body {
   background-color: #212121;
+  overflow-x: hidden;
+  width: 95vw;
 }
 
 @media (max-width: '500px'){
