@@ -13,7 +13,7 @@ const api = fetch("http://localhost:8080/video/lista/0", {
     }
 })
 
-const ListContainerVideo = document.getElementById("videoContainer")
+const ListContainerVideo = document.getElementById("video-container")
 
 const data = await api.json();
 
