@@ -31,7 +31,6 @@ public class VideoController {
         paginaDeVideos.withPage(numeroDaPagina);
         var paginaDeVideosBusca = videoRepository.findAllByAtivoTrue(PageRequest.of(numeroDaPagina, paginaDeVideos.getPageSize()));
         return ResponseEntity.ok(paginaDeVideosBusca.map(VideoRetornoDTO::new));
-
     }
 
     @GetMapping("/lista/{id}/{numeroDaPagina}")
@@ -50,10 +49,12 @@ public class VideoController {
 
     }
 
+    @CrossOrigin
     @PostMapping("/postar/{idUsuario}")
     public ResponseEntity<VideoDTO> postVideo(@PathVariable Long idUsuario, @RequestBody VideoDTO videoDTO) {
 
         var usuario = usuarioRepository.findById(idUsuario);
+
 
         if (usuario.isPresent()) {
             videoRepository.save(new Video(videoDTO, usuario.get()));

@@ -8,8 +8,8 @@ import lombok.*;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-@Entity(name = "video")
-@Table(name = "video")
+@Entity(name = "postagem")
+@Table(name = "postagem")
 @EqualsAndHashCode(of = "id")
 @Getter
 @Setter
