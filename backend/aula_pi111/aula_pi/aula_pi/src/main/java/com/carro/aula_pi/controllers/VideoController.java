@@ -26,6 +26,7 @@ public class VideoController {
     @Autowired
     UsuarioRepository usuarioRepository;
 
+    @CrossOrigin
     @GetMapping("/lista/{numeroDaPagina}")
     public ResponseEntity<Page<VideoRetornoDTO>> getVideos(@PageableDefault(size = 16) Pageable paginaDeVideos, @PathVariable int numeroDaPagina) {
         paginaDeVideos.withPage(numeroDaPagina);
@@ -33,6 +34,7 @@ public class VideoController {
         return ResponseEntity.ok(paginaDeVideosBusca.map(VideoRetornoDTO::new));
     }
 
+    @CrossOrigin
     @GetMapping("/lista/{id}/{numeroDaPagina}")
     public ResponseEntity<Page<VideoRetornoDTO>> getVideosPorId (
             @PageableDefault(size = 16) Pageable paginaDeVideos,
@@ -66,6 +68,7 @@ public class VideoController {
 
     }
 
+    @CrossOrigin
     @PutMapping("/editar/{idUsuario}")
     public ResponseEntity<VideoRetornoDTO> editVideo(@PathVariable Long idUsuario, @RequestBody VideoEditDTO videoEditDTO) {
 
@@ -89,6 +92,7 @@ public class VideoController {
 
     }
 
+    @CrossOrigin
     @DeleteMapping("/deletar/{idVideo}")
     public ResponseEntity<String> deleteVideo(@PathVariable Long idVideo) {
 
@@ -104,6 +108,7 @@ public class VideoController {
 
     }
 
+    @CrossOrigin
     @GetMapping("/busca/{titulo}")
     public ResponseEntity<Page<VideoRetornoDTO>> videosPorTitulo (@PathVariable String titulo, @PageableDefault(size = 16) Pageable paginaDeVideos) {
         return ResponseEntity.ok(videoRepository.findByTituloContainingAndAtivoTrue(titulo, paginaDeVideos).map(VideoRetornoDTO::new));

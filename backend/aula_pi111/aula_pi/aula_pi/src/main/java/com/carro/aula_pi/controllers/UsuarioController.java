@@ -32,12 +32,13 @@ public class UsuarioController {
         return ResponseEntity.ok(usuarioDTO);
     }
 
+    @CrossOrigin
     @GetMapping("/users")
     public ResponseEntity<List<Usuario>> getAllUsers() {
         return ResponseEntity.status(HttpStatus.OK).body(usuarioRepository.findAll());
     }
     
-
+    @CrossOrigin
     @GetMapping("/user/{id}")
     public ResponseEntity<Usuario> getById(@PathVariable Long id) {
         var usuario = usuarioRepository.findById(id);
@@ -47,7 +48,7 @@ public class UsuarioController {
             throw new UsuarioNaoEncontradoException("Não foi encontrado nenhum usuário com o id " + id);
         }
     }
-
+    @CrossOrigin
     @PutMapping("/atualizar/{id}")
     public ResponseEntity atualizar(@RequestBody UsuarioDTO dadosAtualizados, @PathVariable Long id) {
         var usuario = usuarioRepository.findById(id);
@@ -60,7 +61,7 @@ public class UsuarioController {
         }
 
     }
-
+    @CrossOrigin
     @DeleteMapping("/deletar/{id}")
     public ResponseEntity<String> deletar(@PathVariable Long id) {
 
