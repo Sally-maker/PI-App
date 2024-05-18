@@ -31,6 +31,8 @@
   height: 100%;
 }
 
+
+
 .tituloDescrição {
 
   color: #8800ff;
@@ -208,6 +210,16 @@
   right: 0;
 }
 
+.video-container {
+  position: relative;
+}
+
+h2 {
+  color: aliceblue;
+  margin-top: 20px;
+}
+
+
 
 @media (max-width: 1200px) {
   .catalogosDireita, .catalogosEsquerda {
@@ -220,6 +232,8 @@
     margin: 20px auto;
   }
 
+
+ 
   .carrossel {
     height: 150px;
     width: 90%;
