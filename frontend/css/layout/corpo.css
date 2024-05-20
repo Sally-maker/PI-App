@@ -1,3 +1,4 @@
+
 .imagem {
   position:absolute;
   max-width: 50%;
@@ -36,8 +37,8 @@
  .linha {
   position: absolute;
   left: 10.1%; /* posição da linha horizontal */
-  top: 58.1%; /* posição da linha vertical */
-  width: 77.8%; /* largura da linha */
+  top: 58.4%; /* posição da linha vertical */
+  width: 80%; /* largura da linha */
   border-top: 2px solid black;
  }
 
@@ -66,31 +67,35 @@
   width: auto; /* ajusta a largura de acordo com o texto */
  }
 
- .video {
-  position: relative;
-  display: inline-block; /* Exibe os vídeos em linha */
-  width: 24%; /* Largura de cada vídeo */
-  margin-right: -2%; /* Espaço entre os vídeos */
-  vertical-align: top; /* Alinha os vídeos no topo */
-}
-
-.video video {
-  max-width: 100%; /* Garante que o vídeo se ajuste à largura do contêiner */
-  height: auto; /* Mantém a proporção da altura */
-}
-
 .videos {
-  position: absolute;
-  white-space: nowrap; /* Evita que os vídeos quebrem para a próxima linha */
-  margin-top: 28%; /* posição vertical dos vídeos */
-  margin-left: 7%; /* posição horizontal dos vídeos */
+  margin-top: 260px; /* margim normal*/
+  margin-left: 20px;
+  gap: 20px; /* da espaçamento entre os videos*/
+  display: flex; /* Torna o contêiner flexível */
+  flex-wrap: wrap; /* Permite que os itens sejam dispostos em várias linhas */
+  justify-content: center; /* Centraliza os itens horizontalmente */
 }
+
+iframe {
+  width: 100%; /* Define a largura do vídeo como 100% do contêiner */
+  height: auto; /* Mantém a proporção do vídeo */
+  max-width: 300px; /* Define a largura máxima do vídeo */
+  box-sizing: border-box; /* Garante que a borda seja incluída no cálculo do tamanho */
+}
+
 
 body {
   background-color: #212121;
+  overflow: hidden;
+  width: 95vw;
 }
 
-@media (max-width: '500px'){
+.buttonTelaUpload {
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 1200px){
   .imagem {
     position:absolute;
     max-width: 50%;
@@ -129,8 +134,8 @@ body {
    .linha {
     position: absolute;
     left: 10.1%; /* posição da linha horizontal */
-    top: 58.1%; /* posição da linha vertical */
-    width: 77.8%; /* largura da linha */
+    top: 59%; /* posição da linha vertical */
+    width: 86%; /* largura da linha */
     border-top: 2px solid black;
    }
   
@@ -159,27 +164,25 @@ body {
     width: auto; /* ajusta a largura de acordo com o texto */
    }
   
-   .video {
-    position: relative;
-    display: inline-block; /* Exibe os vídeos em linha */
-    width: 25%; /* Largura de cada vídeo */
-    margin-right: -2%; /* Espaço entre os vídeos */
-    vertical-align: top; /* Alinha os vídeos no topo */
+   .videos {
+    margin-top: 320px; /* margim normal*/
+    margin-left: 20px;
+    gap: 20px; /* da espaçamento entre os videos*/
+    display: flex; /* Torna o contêiner flexível */
+    flex-wrap: wrap; /* Permite que os itens sejam dispostos em várias linhas */
+    justify-content: center; /* Centraliza os itens horizontalmente */
   }
   
-  .video video {
-    max-width: 100%; /* Garante que o vídeo se ajuste à largura do contêiner */
-    height: auto; /* Mantém a proporção da altura */
-  }
-  
-  .videos {
-    position: absolute;
-    white-space: nowrap; /* Evita que os vídeos quebrem para a próxima linha */
-    margin-top: 28%; /* posição vertical dos vídeos */
-    margin-left: 9.8%; /* posição horizontal dos vídeos */
+  iframe {
+    width: 100%; /* Define a largura do vídeo como 100% do contêiner */
+    height: auto; /* Mantém a proporção do vídeo */
+    max-width: 300px; /* Define a largura máxima do vídeo */
+    box-sizing: border-box; /* Garante que a borda seja incluída no cálculo do tamanho */
   }
   
   body {
-    background-color: #000000;
+    background-color: #212121;
   }
+
+  
 }
