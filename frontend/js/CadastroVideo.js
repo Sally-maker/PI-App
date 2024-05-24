@@ -7,15 +7,18 @@ document.getElementById('videoForm').addEventListener('submit', function(event) 
     const categoria = document.getElementById('categoria').value;
     const restrito = document.getElementById('restrito').checked;
 
+    const userId = localStorage.getItem("userId");
+
     const videoData = {
         titulo: titulo,
         url: url,
         duracao: duracao,
         categoria: categoria,
-        restrito: restrito
+        restrito: restrito,
+        idUsuario: userId
     };
 
-    fetch('http://localhost:8080/video/postar/13', {
+    fetch('http://localhost:8080/video/postar/${idUsuario}', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

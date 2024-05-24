@@ -1,5 +1,6 @@
 package com.carro.aula_pi.controllers;
 
+import com.carro.aula_pi.dto.usuario.IdDTO;
 import com.carro.aula_pi.dto.usuario.LoginDTO;
 import com.carro.aula_pi.dto.usuario.UsuarioDTO;
 import com.carro.aula_pi.entity.Usuario;
@@ -77,12 +78,12 @@ public class UsuarioController {
     }
     @CrossOrigin
     @PostMapping("/login")
-    public ResponseEntity<Long> logar (@RequestBody LoginDTO loginDTO) {
+    public ResponseEntity<IdDTO> logar (@RequestBody LoginDTO loginDTO) {
 
         var usuario = usuarioRepository.getReferenceByEmailAndSenha(loginDTO.email(), loginDTO.senha());
 
         if (usuario.isPresent()) {
-            return ResponseEntity.ok(usuario.get().getId());
+            return ResponseEntity.ok(new IdDTO((usuario.get().getId())));
         }
 
         throw new UsuarioNaoEncontradoException("Credenciais invalidas");

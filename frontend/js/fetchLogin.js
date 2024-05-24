@@ -19,14 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         })
             .then((response) => {
-                console.log("aaaaaaa")
                 if (!response.ok) {
                     throw new Error("Erro ao enviar o formulário.");
                 }
                 return response.json();
             })
             .then((data) => {
-                console.log("Resposta do servidor:", data);
+                // Armazena o ID do usuário em localStorage
+                localStorage.setItem("userId", data.id);
 
                 console.log("Redirecionando para a próxima página...");
                 window.location.href = '../telaPrincipal.html';
