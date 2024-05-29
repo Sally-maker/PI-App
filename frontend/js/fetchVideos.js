@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", async function () {
   try {
-    const response = await fetch(
-      "http://localhost:8080/video/lista/0?limit=100"
-    );
+    const response = await fetch(`http://localhost:8080/video/lista/0?limit=100`);
     const data = await response.json();
 
     const catalogosDaDireita = document.getElementById("catalogosDaDireita");
@@ -12,28 +10,32 @@ document.addEventListener("DOMContentLoaded", async function () {
     const shuffledVideos = shuffleArray(data.content).slice(0, 8);
 
     shuffledVideos.forEach((video, index) => {
-      const videoContainer = document.createElement("div");
-      videoContainer.classList.add(
-        index % 2 === 0 ? "catalogosDireita" : "catalogosEsquerda"
-      );
+      const videoDiv = document.createElement("div");
+      videoDiv.classList.add(index % 2 === 0 ? "catalogosDireita" : "catalogosEsquerda");
 
       const videoElement = document.createElement("div");
       videoElement.classList.add("video-container");
       videoElement.innerHTML = `
-          <iframe src="${video.url}" title="${video.titulo}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe src="${video.url}" title="${video.titulo}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       `;
 
-      const tituloElement = document.createElement("p");
-      tituloElement.classList.add("titulo2");
-      tituloElement.textContent = "Catalogo";
+      const overlayDiv = document.createElement("div");
+      overlayDiv.classList.add("overlay-div");
 
-      videoContainer.appendChild(videoElement);
-      videoContainer.appendChild(tituloElement);
+      // Adiciona um evento de clique para a camada div de sobreposição
+      overlayDiv.addEventListener('click', function(event) {
+        event.preventDefault(); // Impede o comportamento padrão do clique
+        localStorage.setItem('selectedVideoId', video.id); // Armazena o ID do vídeo no localStorage
+        window.location.href = './telaDeVideoIndividual.html'; // Redireciona para a página de vídeo individual
+      });
+
+      videoDiv.appendChild(videoElement);
+      videoDiv.appendChild(overlayDiv);
 
       if (index % 2 === 0) {
-        catalogosDaDireita.appendChild(videoContainer);
+        catalogosDaDireita.appendChild(videoDiv);
       } else {
-        catalogosDaEsquerda.appendChild(videoContainer);
+        catalogosDaEsquerda.appendChild(videoDiv);
       }
     });
 

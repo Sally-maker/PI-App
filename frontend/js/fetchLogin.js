@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 return response.json();
             })
             .then((data) => {
-                // Armazena o ID do usuário em localStorage
                 localStorage.setItem("userId", data.id);
 
                 console.log("Redirecionando para a próxima página...");
