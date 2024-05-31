@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 localStorage.setItem("userId", data.id);
 
                 console.log("Redirecionando para a próxima página...");
-                window.location.href = '../telaPrincipal.html';
+                window.location.href = './telaPrincipal.html';
             })
             .catch((error) => {
                 console.error("Erro:", error);

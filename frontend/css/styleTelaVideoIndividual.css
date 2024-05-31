@@ -37,6 +37,7 @@
     display: flex;
     gap: 5px;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .barraDePesquisa {
@@ -53,9 +54,33 @@
 
 .tituloVideo {
     color: white;
+    font-family: 'Roboto', sans-serif;
+
 }
 
-p {
-    color: white;
+
+
+.listavideos {
+    margin-top: 20px;
 }
 
+#listaVideosSecundarios {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container-videos-secundarios {
+    margin-top: 10px; 
+}
+
+.videosSecundarios {
+    width: 250px;
+    height: 130px;
+    margin-left: 40px;
+}
+
+.infoSecundaria {
+    margin-left: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}

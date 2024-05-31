@@ -22,11 +22,10 @@ document.addEventListener("DOMContentLoaded", async function () {
       const overlayDiv = document.createElement("div");
       overlayDiv.classList.add("overlay-div");
 
-      // Adiciona um evento de clique para a camada div de sobreposição
       overlayDiv.addEventListener('click', function(event) {
-        event.preventDefault(); // Impede o comportamento padrão do clique
-        localStorage.setItem('selectedVideoId', video.id); // Armazena o ID do vídeo no localStorage
-        window.location.href = './telaDeVideoIndividual.html'; // Redireciona para a página de vídeo individual
+        event.preventDefault(); 
+        localStorage.setItem('selectedVideoId', video.id); 
+        window.location.href = './telaDeVideoIndividual.html'; 
       });
 
       videoDiv.appendChild(videoElement);
